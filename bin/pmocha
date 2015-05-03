@@ -4,4 +4,4 @@ SOURCE="$0"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-/usr/bin/env phantomjs --disk-cache=yes --max-disk-cache-size=1024 $DIR/../lib/pmocha.js "$@"
+phantomjs --disk-cache=yes --max-disk-cache-size=1024 $DIR/../lib/node_modules/phantom-mocha/lib/pmocha.js "$@"
