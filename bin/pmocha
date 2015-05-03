@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+SOURCE="$0"
+while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+/usr/bin/env phantomjs --disk-cache=yes --max-disk-cache-size=1024 $DIR/../lib/pmocha.js "$@"
