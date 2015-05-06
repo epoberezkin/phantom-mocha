@@ -1,6 +1,6 @@
 {
   "name": "phantom-mocha",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Mocha-like tests in phantomjs script",
   "main": "index.js",
   "scripts": {
